@@ -73,6 +73,9 @@ message ServiceProfile {
     
     // Minimum number of receiving GWs (informative).
     uint32 min_gw_diversity = 20;
+
+    // Gateways are private to devices under the same service-profile.
+    bool gws_private_to_service_profile = 21;
 }
 
 message DeviceProfile {
