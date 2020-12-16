@@ -466,13 +466,13 @@
     },
     "/api/applications/{application_id}/integrations/mqtt/certificate": {
       "post": {
-        "summary": "GenerateMQTTIntegrationCertificate generates an application ID specific TLS certificate\nto connect to the MQTT broker.",
-        "operationId": "GenerateMQTTIntegrationCertificate",
+        "summary": "GenerateMQTTIntegrationClientCertificate generates an application ID specific TLS certificate\nto connect to the MQTT broker.",
+        "operationId": "GenerateMQTTIntegrationClientCertificate",
         "responses": {
           "200": {
             "description": "A successful response.",
             "schema": {
-              "$ref": "#/definitions/apiGenerateMQTTIntegrationCertificateResponse"
+              "$ref": "#/definitions/apiGenerateMQTTIntegrationClientCertificateResponse"
             }
           }
         },
@@ -1561,7 +1561,7 @@
         }
       }
     },
-    "apiGenerateMQTTIntegrationCertificateResponse": {
+    "apiGenerateMQTTIntegrationClientCertificateResponse": {
       "type": "object",
       "properties": {
         "tlsCert": {

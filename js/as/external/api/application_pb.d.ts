@@ -1704,27 +1704,27 @@ export namespace DeletePilotThingsIntegrationRequest {
   }
 }
 
-export class GenerateMQTTIntegrationCertificateRequest extends jspb.Message {
+export class GenerateMQTTIntegrationClientCertificateRequest extends jspb.Message {
   getApplicationId(): number;
   setApplicationId(value: number): void;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): GenerateMQTTIntegrationCertificateRequest.AsObject;
-  static toObject(includeInstance: boolean, msg: GenerateMQTTIntegrationCertificateRequest): GenerateMQTTIntegrationCertificateRequest.AsObject;
+  toObject(includeInstance?: boolean): GenerateMQTTIntegrationClientCertificateRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: GenerateMQTTIntegrationClientCertificateRequest): GenerateMQTTIntegrationClientCertificateRequest.AsObject;
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-  static serializeBinaryToWriter(message: GenerateMQTTIntegrationCertificateRequest, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): GenerateMQTTIntegrationCertificateRequest;
-  static deserializeBinaryFromReader(message: GenerateMQTTIntegrationCertificateRequest, reader: jspb.BinaryReader): GenerateMQTTIntegrationCertificateRequest;
+  static serializeBinaryToWriter(message: GenerateMQTTIntegrationClientCertificateRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): GenerateMQTTIntegrationClientCertificateRequest;
+  static deserializeBinaryFromReader(message: GenerateMQTTIntegrationClientCertificateRequest, reader: jspb.BinaryReader): GenerateMQTTIntegrationClientCertificateRequest;
 }
 
-export namespace GenerateMQTTIntegrationCertificateRequest {
+export namespace GenerateMQTTIntegrationClientCertificateRequest {
   export type AsObject = {
     applicationId: number,
   }
 }
 
-export class GenerateMQTTIntegrationCertificateResponse extends jspb.Message {
+export class GenerateMQTTIntegrationClientCertificateResponse extends jspb.Message {
   getTlsCert(): Uint8Array | string;
   getTlsCert_asU8(): Uint8Array;
   getTlsCert_asB64(): string;
@@ -1746,16 +1746,16 @@ export class GenerateMQTTIntegrationCertificateResponse extends jspb.Message {
   setExpiresAt(value?: google_protobuf_timestamp_pb.Timestamp): void;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): GenerateMQTTIntegrationCertificateResponse.AsObject;
-  static toObject(includeInstance: boolean, msg: GenerateMQTTIntegrationCertificateResponse): GenerateMQTTIntegrationCertificateResponse.AsObject;
+  toObject(includeInstance?: boolean): GenerateMQTTIntegrationClientCertificateResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: GenerateMQTTIntegrationClientCertificateResponse): GenerateMQTTIntegrationClientCertificateResponse.AsObject;
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-  static serializeBinaryToWriter(message: GenerateMQTTIntegrationCertificateResponse, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): GenerateMQTTIntegrationCertificateResponse;
-  static deserializeBinaryFromReader(message: GenerateMQTTIntegrationCertificateResponse, reader: jspb.BinaryReader): GenerateMQTTIntegrationCertificateResponse;
+  static serializeBinaryToWriter(message: GenerateMQTTIntegrationClientCertificateResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): GenerateMQTTIntegrationClientCertificateResponse;
+  static deserializeBinaryFromReader(message: GenerateMQTTIntegrationClientCertificateResponse, reader: jspb.BinaryReader): GenerateMQTTIntegrationClientCertificateResponse;
 }
 
-export namespace GenerateMQTTIntegrationCertificateResponse {
+export namespace GenerateMQTTIntegrationClientCertificateResponse {
   export type AsObject = {
     tlsCert: Uint8Array | string,
     tlsKey: Uint8Array | string,

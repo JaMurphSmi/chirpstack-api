@@ -326,9 +326,9 @@ service ApplicationService {
 		};
 	}
 
-    // GenerateMQTTIntegrationCertificate generates an application ID specific TLS certificate
+    // GenerateMQTTIntegrationClientCertificate generates an application ID specific TLS certificate
     // to connect to the MQTT broker.
-    rpc GenerateMQTTIntegrationCertificate(GenerateMQTTIntegrationCertificateRequest) returns (GenerateMQTTIntegrationCertificateResponse) {
+    rpc GenerateMQTTIntegrationClientCertificate(GenerateMQTTIntegrationClientCertificateRequest) returns (GenerateMQTTIntegrationClientCertificateResponse) {
         option(google.api.http) = {
             post: "/api/applications/{application_id}/integrations/mqtt/certificate"
         };
@@ -963,12 +963,12 @@ message DeletePilotThingsIntegrationRequest {
 	int64 application_id = 1 [json_name = "applicationID"];
 }
 
-message GenerateMQTTIntegrationCertificateRequest {
+message GenerateMQTTIntegrationClientCertificateRequest {
     // Application ID.
     int64 application_id = 1 [json_name = "applicationID"];
 }
 
-message GenerateMQTTIntegrationCertificateResponse {
+message GenerateMQTTIntegrationClientCertificateResponse {
     // TLS certificate.
     bytes tls_cert = 1;
 

@@ -38,8 +38,8 @@ goog.exportSymbol('proto.api.DeleteMyDevicesIntegrationRequest', null, global);
 goog.exportSymbol('proto.api.DeletePilotThingsIntegrationRequest', null, global);
 goog.exportSymbol('proto.api.DeleteThingsBoardIntegrationRequest', null, global);
 goog.exportSymbol('proto.api.GCPPubSubIntegration', null, global);
-goog.exportSymbol('proto.api.GenerateMQTTIntegrationCertificateRequest', null, global);
-goog.exportSymbol('proto.api.GenerateMQTTIntegrationCertificateResponse', null, global);
+goog.exportSymbol('proto.api.GenerateMQTTIntegrationClientCertificateRequest', null, global);
+goog.exportSymbol('proto.api.GenerateMQTTIntegrationClientCertificateResponse', null, global);
 goog.exportSymbol('proto.api.GetAWSSNSIntegrationRequest', null, global);
 goog.exportSymbol('proto.api.GetAWSSNSIntegrationResponse', null, global);
 goog.exportSymbol('proto.api.GetApplicationRequest', null, global);
@@ -13329,12 +13329,12 @@ proto.api.DeletePilotThingsIntegrationRequest.prototype.setApplicationId = funct
  * @extends {jspb.Message}
  * @constructor
  */
-proto.api.GenerateMQTTIntegrationCertificateRequest = function(opt_data) {
+proto.api.GenerateMQTTIntegrationClientCertificateRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.api.GenerateMQTTIntegrationCertificateRequest, jspb.Message);
+goog.inherits(proto.api.GenerateMQTTIntegrationClientCertificateRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.api.GenerateMQTTIntegrationCertificateRequest.displayName = 'proto.api.GenerateMQTTIntegrationCertificateRequest';
+  proto.api.GenerateMQTTIntegrationClientCertificateRequest.displayName = 'proto.api.GenerateMQTTIntegrationClientCertificateRequest';
 }
 
 
@@ -13349,8 +13349,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.api.GenerateMQTTIntegrationCertificateRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.api.GenerateMQTTIntegrationCertificateRequest.toObject(opt_includeInstance, this);
+proto.api.GenerateMQTTIntegrationClientCertificateRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.api.GenerateMQTTIntegrationClientCertificateRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -13359,10 +13359,10 @@ proto.api.GenerateMQTTIntegrationCertificateRequest.prototype.toObject = functio
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.api.GenerateMQTTIntegrationCertificateRequest} msg The msg instance to transform.
+ * @param {!proto.api.GenerateMQTTIntegrationClientCertificateRequest} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.api.GenerateMQTTIntegrationCertificateRequest.toObject = function(includeInstance, msg) {
+proto.api.GenerateMQTTIntegrationClientCertificateRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     applicationId: msg.getApplicationId()
   };
@@ -13378,23 +13378,23 @@ proto.api.GenerateMQTTIntegrationCertificateRequest.toObject = function(includeI
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.api.GenerateMQTTIntegrationCertificateRequest}
+ * @return {!proto.api.GenerateMQTTIntegrationClientCertificateRequest}
  */
-proto.api.GenerateMQTTIntegrationCertificateRequest.deserializeBinary = function(bytes) {
+proto.api.GenerateMQTTIntegrationClientCertificateRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.api.GenerateMQTTIntegrationCertificateRequest;
-  return proto.api.GenerateMQTTIntegrationCertificateRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.api.GenerateMQTTIntegrationClientCertificateRequest;
+  return proto.api.GenerateMQTTIntegrationClientCertificateRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.api.GenerateMQTTIntegrationCertificateRequest} msg The message object to deserialize into.
+ * @param {!proto.api.GenerateMQTTIntegrationClientCertificateRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.api.GenerateMQTTIntegrationCertificateRequest}
+ * @return {!proto.api.GenerateMQTTIntegrationClientCertificateRequest}
  */
-proto.api.GenerateMQTTIntegrationCertificateRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.api.GenerateMQTTIntegrationClientCertificateRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -13417,10 +13417,10 @@ proto.api.GenerateMQTTIntegrationCertificateRequest.deserializeBinaryFromReader 
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.api.GenerateMQTTIntegrationCertificateRequest} message
+ * @param {!proto.api.GenerateMQTTIntegrationClientCertificateRequest} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.api.GenerateMQTTIntegrationCertificateRequest.serializeBinaryToWriter = function(message, writer) {
+proto.api.GenerateMQTTIntegrationClientCertificateRequest.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -13429,7 +13429,7 @@ proto.api.GenerateMQTTIntegrationCertificateRequest.serializeBinaryToWriter = fu
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.api.GenerateMQTTIntegrationCertificateRequest.prototype.serializeBinary = function() {
+proto.api.GenerateMQTTIntegrationClientCertificateRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -13441,7 +13441,7 @@ proto.api.GenerateMQTTIntegrationCertificateRequest.prototype.serializeBinary = 
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.api.GenerateMQTTIntegrationCertificateRequest.prototype.serializeBinaryToWriter = function (writer) {
+proto.api.GenerateMQTTIntegrationClientCertificateRequest.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getApplicationId();
   if (f !== 0) {
@@ -13455,10 +13455,10 @@ proto.api.GenerateMQTTIntegrationCertificateRequest.prototype.serializeBinaryToW
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.api.GenerateMQTTIntegrationCertificateRequest} The clone.
+ * @return {!proto.api.GenerateMQTTIntegrationClientCertificateRequest} The clone.
  */
-proto.api.GenerateMQTTIntegrationCertificateRequest.prototype.cloneMessage = function() {
-  return /** @type {!proto.api.GenerateMQTTIntegrationCertificateRequest} */ (jspb.Message.cloneMessage(this));
+proto.api.GenerateMQTTIntegrationClientCertificateRequest.prototype.cloneMessage = function() {
+  return /** @type {!proto.api.GenerateMQTTIntegrationClientCertificateRequest} */ (jspb.Message.cloneMessage(this));
 };
 
 
@@ -13466,13 +13466,13 @@ proto.api.GenerateMQTTIntegrationCertificateRequest.prototype.cloneMessage = fun
  * optional int64 application_id = 1;
  * @return {number}
  */
-proto.api.GenerateMQTTIntegrationCertificateRequest.prototype.getApplicationId = function() {
+proto.api.GenerateMQTTIntegrationClientCertificateRequest.prototype.getApplicationId = function() {
   return /** @type {number} */ (jspb.Message.getFieldProto3(this, 1, 0));
 };
 
 
 /** @param {number} value  */
-proto.api.GenerateMQTTIntegrationCertificateRequest.prototype.setApplicationId = function(value) {
+proto.api.GenerateMQTTIntegrationClientCertificateRequest.prototype.setApplicationId = function(value) {
   jspb.Message.setField(this, 1, value);
 };
 
@@ -13488,12 +13488,12 @@ proto.api.GenerateMQTTIntegrationCertificateRequest.prototype.setApplicationId =
  * @extends {jspb.Message}
  * @constructor
  */
-proto.api.GenerateMQTTIntegrationCertificateResponse = function(opt_data) {
+proto.api.GenerateMQTTIntegrationClientCertificateResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.api.GenerateMQTTIntegrationCertificateResponse, jspb.Message);
+goog.inherits(proto.api.GenerateMQTTIntegrationClientCertificateResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.api.GenerateMQTTIntegrationCertificateResponse.displayName = 'proto.api.GenerateMQTTIntegrationCertificateResponse';
+  proto.api.GenerateMQTTIntegrationClientCertificateResponse.displayName = 'proto.api.GenerateMQTTIntegrationClientCertificateResponse';
 }
 
 
@@ -13508,8 +13508,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.api.GenerateMQTTIntegrationCertificateResponse.toObject(opt_includeInstance, this);
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.api.GenerateMQTTIntegrationClientCertificateResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -13518,10 +13518,10 @@ proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.toObject = functi
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.api.GenerateMQTTIntegrationCertificateResponse} msg The msg instance to transform.
+ * @param {!proto.api.GenerateMQTTIntegrationClientCertificateResponse} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.api.GenerateMQTTIntegrationCertificateResponse.toObject = function(includeInstance, msg) {
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     tlsCert: msg.getTlsCert_asB64(),
     tlsKey: msg.getTlsKey_asB64(),
@@ -13540,23 +13540,23 @@ proto.api.GenerateMQTTIntegrationCertificateResponse.toObject = function(include
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.api.GenerateMQTTIntegrationCertificateResponse}
+ * @return {!proto.api.GenerateMQTTIntegrationClientCertificateResponse}
  */
-proto.api.GenerateMQTTIntegrationCertificateResponse.deserializeBinary = function(bytes) {
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.api.GenerateMQTTIntegrationCertificateResponse;
-  return proto.api.GenerateMQTTIntegrationCertificateResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.api.GenerateMQTTIntegrationClientCertificateResponse;
+  return proto.api.GenerateMQTTIntegrationClientCertificateResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.api.GenerateMQTTIntegrationCertificateResponse} msg The message object to deserialize into.
+ * @param {!proto.api.GenerateMQTTIntegrationClientCertificateResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.api.GenerateMQTTIntegrationCertificateResponse}
+ * @return {!proto.api.GenerateMQTTIntegrationClientCertificateResponse}
  */
-proto.api.GenerateMQTTIntegrationCertificateResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -13592,10 +13592,10 @@ proto.api.GenerateMQTTIntegrationCertificateResponse.deserializeBinaryFromReader
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.api.GenerateMQTTIntegrationCertificateResponse} message
+ * @param {!proto.api.GenerateMQTTIntegrationClientCertificateResponse} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.api.GenerateMQTTIntegrationCertificateResponse.serializeBinaryToWriter = function(message, writer) {
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -13604,7 +13604,7 @@ proto.api.GenerateMQTTIntegrationCertificateResponse.serializeBinaryToWriter = f
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.serializeBinary = function() {
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -13616,7 +13616,7 @@ proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.serializeBinary =
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.serializeBinaryToWriter = function (writer) {
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getTlsCert_asU8();
   if (f.length > 0) {
@@ -13652,10 +13652,10 @@ proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.serializeBinaryTo
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.api.GenerateMQTTIntegrationCertificateResponse} The clone.
+ * @return {!proto.api.GenerateMQTTIntegrationClientCertificateResponse} The clone.
  */
-proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.cloneMessage = function() {
-  return /** @type {!proto.api.GenerateMQTTIntegrationCertificateResponse} */ (jspb.Message.cloneMessage(this));
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.cloneMessage = function() {
+  return /** @type {!proto.api.GenerateMQTTIntegrationClientCertificateResponse} */ (jspb.Message.cloneMessage(this));
 };
 
 
@@ -13663,7 +13663,7 @@ proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.cloneMessage = fu
  * optional bytes tls_cert = 1;
  * @return {!(string|Uint8Array)}
  */
-proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.getTlsCert = function() {
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.getTlsCert = function() {
   return /** @type {!(string|Uint8Array)} */ (jspb.Message.getFieldProto3(this, 1, ""));
 };
 
@@ -13673,7 +13673,7 @@ proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.getTlsCert = func
  * This is a type-conversion wrapper around `getTlsCert()`
  * @return {string}
  */
-proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.getTlsCert_asB64 = function() {
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.getTlsCert_asB64 = function() {
   return /** @type {string} */ (jspb.Message.bytesAsB64(
       this.getTlsCert()));
 };
@@ -13686,14 +13686,14 @@ proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.getTlsCert_asB64 
  * This is a type-conversion wrapper around `getTlsCert()`
  * @return {!Uint8Array}
  */
-proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.getTlsCert_asU8 = function() {
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.getTlsCert_asU8 = function() {
   return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(
       this.getTlsCert()));
 };
 
 
 /** @param {!(string|Uint8Array)} value  */
-proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.setTlsCert = function(value) {
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.setTlsCert = function(value) {
   jspb.Message.setField(this, 1, value);
 };
 
@@ -13702,7 +13702,7 @@ proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.setTlsCert = func
  * optional bytes tls_key = 2;
  * @return {!(string|Uint8Array)}
  */
-proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.getTlsKey = function() {
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.getTlsKey = function() {
   return /** @type {!(string|Uint8Array)} */ (jspb.Message.getFieldProto3(this, 2, ""));
 };
 
@@ -13712,7 +13712,7 @@ proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.getTlsKey = funct
  * This is a type-conversion wrapper around `getTlsKey()`
  * @return {string}
  */
-proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.getTlsKey_asB64 = function() {
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.getTlsKey_asB64 = function() {
   return /** @type {string} */ (jspb.Message.bytesAsB64(
       this.getTlsKey()));
 };
@@ -13725,14 +13725,14 @@ proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.getTlsKey_asB64 =
  * This is a type-conversion wrapper around `getTlsKey()`
  * @return {!Uint8Array}
  */
-proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.getTlsKey_asU8 = function() {
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.getTlsKey_asU8 = function() {
   return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(
       this.getTlsKey()));
 };
 
 
 /** @param {!(string|Uint8Array)} value  */
-proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.setTlsKey = function(value) {
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.setTlsKey = function(value) {
   jspb.Message.setField(this, 2, value);
 };
 
@@ -13741,7 +13741,7 @@ proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.setTlsKey = funct
  * optional bytes ca_cert = 3;
  * @return {!(string|Uint8Array)}
  */
-proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.getCaCert = function() {
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.getCaCert = function() {
   return /** @type {!(string|Uint8Array)} */ (jspb.Message.getFieldProto3(this, 3, ""));
 };
 
@@ -13751,7 +13751,7 @@ proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.getCaCert = funct
  * This is a type-conversion wrapper around `getCaCert()`
  * @return {string}
  */
-proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.getCaCert_asB64 = function() {
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.getCaCert_asB64 = function() {
   return /** @type {string} */ (jspb.Message.bytesAsB64(
       this.getCaCert()));
 };
@@ -13764,14 +13764,14 @@ proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.getCaCert_asB64 =
  * This is a type-conversion wrapper around `getCaCert()`
  * @return {!Uint8Array}
  */
-proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.getCaCert_asU8 = function() {
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.getCaCert_asU8 = function() {
   return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(
       this.getCaCert()));
 };
 
 
 /** @param {!(string|Uint8Array)} value  */
-proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.setCaCert = function(value) {
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.setCaCert = function(value) {
   jspb.Message.setField(this, 3, value);
 };
 
@@ -13780,19 +13780,19 @@ proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.setCaCert = funct
  * optional google.protobuf.Timestamp expires_at = 4;
  * @return {proto.google.protobuf.Timestamp}
  */
-proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.getExpiresAt = function() {
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.getExpiresAt = function() {
   return /** @type{proto.google.protobuf.Timestamp} */ (
     jspb.Message.getWrapperField(this, google_protobuf_timestamp_pb.Timestamp, 4));
 };
 
 
 /** @param {proto.google.protobuf.Timestamp|undefined} value  */
-proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.setExpiresAt = function(value) {
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.setExpiresAt = function(value) {
   jspb.Message.setWrapperField(this, 4, value);
 };
 
 
-proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.clearExpiresAt = function() {
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.clearExpiresAt = function() {
   this.setExpiresAt(undefined);
 };
 
@@ -13801,7 +13801,7 @@ proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.clearExpiresAt = 
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.api.GenerateMQTTIntegrationCertificateResponse.prototype.hasExpiresAt = function() {
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.hasExpiresAt = function() {
   return jspb.Message.getField(this, 4) != null;
 };
 
