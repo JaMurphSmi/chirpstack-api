@@ -1804,7 +1804,7 @@
         "AWS_SNS",
         "AZURE_SERVICE_BUS",
         "PILOT_THINGS",
-        "MQTT"
+        "MQTT_GLOBAL"
       ],
       "default": "HTTP"
     },

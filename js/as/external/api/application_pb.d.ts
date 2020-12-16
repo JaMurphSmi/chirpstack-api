@@ -1774,7 +1774,7 @@ export interface IntegrationKindMap {
   AWS_SNS: 6;
   AZURE_SERVICE_BUS: 7;
   PILOT_THINGS: 8;
-  MQTT: 9;
+  MQTT_GLOBAL: 9;
 }
 
 export const IntegrationKind: IntegrationKindMap;
