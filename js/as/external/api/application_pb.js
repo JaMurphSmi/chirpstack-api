@@ -13523,9 +13523,9 @@ proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.toObject = 
  */
 proto.api.GenerateMQTTIntegrationClientCertificateResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
-    tlsCert: msg.getTlsCert_asB64(),
-    tlsKey: msg.getTlsKey_asB64(),
-    caCert: msg.getCaCert_asB64(),
+    tlsCert: msg.getTlsCert(),
+    tlsKey: msg.getTlsKey(),
+    caCert: msg.getCaCert(),
     expiresAt: (f = msg.getExpiresAt()) && google_protobuf_timestamp_pb.Timestamp.toObject(includeInstance, f)
   };
 
@@ -13564,15 +13564,15 @@ proto.api.GenerateMQTTIntegrationClientCertificateResponse.deserializeBinaryFrom
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {!Uint8Array} */ (reader.readBytes());
+      var value = /** @type {string} */ (reader.readString());
       msg.setTlsCert(value);
       break;
     case 2:
-      var value = /** @type {!Uint8Array} */ (reader.readBytes());
+      var value = /** @type {string} */ (reader.readString());
       msg.setTlsKey(value);
       break;
     case 3:
-      var value = /** @type {!Uint8Array} */ (reader.readBytes());
+      var value = /** @type {string} */ (reader.readString());
       msg.setCaCert(value);
       break;
     case 4:
@@ -13618,23 +13618,23 @@ proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.serializeBi
  */
 proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
-  f = this.getTlsCert_asU8();
+  f = this.getTlsCert();
   if (f.length > 0) {
-    writer.writeBytes(
+    writer.writeString(
       1,
       f
     );
   }
-  f = this.getTlsKey_asU8();
+  f = this.getTlsKey();
   if (f.length > 0) {
-    writer.writeBytes(
+    writer.writeString(
       2,
       f
     );
   }
-  f = this.getCaCert_asU8();
+  f = this.getCaCert();
   if (f.length > 0) {
-    writer.writeBytes(
+    writer.writeString(
       3,
       f
     );
@@ -13660,117 +13660,45 @@ proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.cloneMessag
 
 
 /**
- * optional bytes tls_cert = 1;
- * @return {!(string|Uint8Array)}
- */
-proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.getTlsCert = function() {
-  return /** @type {!(string|Uint8Array)} */ (jspb.Message.getFieldProto3(this, 1, ""));
-};
-
-
-/**
- * optional bytes tls_cert = 1;
- * This is a type-conversion wrapper around `getTlsCert()`
+ * optional string tls_cert = 1;
  * @return {string}
  */
-proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.getTlsCert_asB64 = function() {
-  return /** @type {string} */ (jspb.Message.bytesAsB64(
-      this.getTlsCert()));
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.getTlsCert = function() {
+  return /** @type {string} */ (jspb.Message.getFieldProto3(this, 1, ""));
 };
 
 
-/**
- * optional bytes tls_cert = 1;
- * Note that Uint8Array is not supported on all browsers.
- * @see http://caniuse.com/Uint8Array
- * This is a type-conversion wrapper around `getTlsCert()`
- * @return {!Uint8Array}
- */
-proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.getTlsCert_asU8 = function() {
-  return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(
-      this.getTlsCert()));
-};
-
-
-/** @param {!(string|Uint8Array)} value  */
+/** @param {string} value  */
 proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.setTlsCert = function(value) {
   jspb.Message.setField(this, 1, value);
 };
 
 
 /**
- * optional bytes tls_key = 2;
- * @return {!(string|Uint8Array)}
- */
-proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.getTlsKey = function() {
-  return /** @type {!(string|Uint8Array)} */ (jspb.Message.getFieldProto3(this, 2, ""));
-};
-
-
-/**
- * optional bytes tls_key = 2;
- * This is a type-conversion wrapper around `getTlsKey()`
+ * optional string tls_key = 2;
  * @return {string}
  */
-proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.getTlsKey_asB64 = function() {
-  return /** @type {string} */ (jspb.Message.bytesAsB64(
-      this.getTlsKey()));
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.getTlsKey = function() {
+  return /** @type {string} */ (jspb.Message.getFieldProto3(this, 2, ""));
 };
 
 
-/**
- * optional bytes tls_key = 2;
- * Note that Uint8Array is not supported on all browsers.
- * @see http://caniuse.com/Uint8Array
- * This is a type-conversion wrapper around `getTlsKey()`
- * @return {!Uint8Array}
- */
-proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.getTlsKey_asU8 = function() {
-  return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(
-      this.getTlsKey()));
-};
-
-
-/** @param {!(string|Uint8Array)} value  */
+/** @param {string} value  */
 proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.setTlsKey = function(value) {
   jspb.Message.setField(this, 2, value);
 };
 
 
 /**
- * optional bytes ca_cert = 3;
- * @return {!(string|Uint8Array)}
- */
-proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.getCaCert = function() {
-  return /** @type {!(string|Uint8Array)} */ (jspb.Message.getFieldProto3(this, 3, ""));
-};
-
-
-/**
- * optional bytes ca_cert = 3;
- * This is a type-conversion wrapper around `getCaCert()`
+ * optional string ca_cert = 3;
  * @return {string}
  */
-proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.getCaCert_asB64 = function() {
-  return /** @type {string} */ (jspb.Message.bytesAsB64(
-      this.getCaCert()));
+proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.getCaCert = function() {
+  return /** @type {string} */ (jspb.Message.getFieldProto3(this, 3, ""));
 };
 
 
-/**
- * optional bytes ca_cert = 3;
- * Note that Uint8Array is not supported on all browsers.
- * @see http://caniuse.com/Uint8Array
- * This is a type-conversion wrapper around `getCaCert()`
- * @return {!Uint8Array}
- */
-proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.getCaCert_asU8 = function() {
-  return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(
-      this.getCaCert()));
-};
-
-
-/** @param {!(string|Uint8Array)} value  */
+/** @param {string} value  */
 proto.api.GenerateMQTTIntegrationClientCertificateResponse.prototype.setCaCert = function(value) {
   jspb.Message.setField(this, 3, value);
 };

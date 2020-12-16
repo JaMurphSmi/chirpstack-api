@@ -970,13 +970,13 @@ message GenerateMQTTIntegrationClientCertificateRequest {
 
 message GenerateMQTTIntegrationClientCertificateResponse {
     // TLS certificate.
-    bytes tls_cert = 1;
+    string tls_cert = 1;
 
     // TLS key.
-    bytes tls_key = 2;
+    string tls_key = 2;
 
     // CA certificate.
-    bytes ca_cert = 3;
+    string ca_cert = 3;
 
     // Expires at defines the expiration date of the certificate.
     google.protobuf.Timestamp expires_at = 4;

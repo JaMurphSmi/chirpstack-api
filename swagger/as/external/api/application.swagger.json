@@ -1566,17 +1566,14 @@
       "properties": {
         "tlsCert": {
           "type": "string",
-          "format": "byte",
           "description": "TLS certificate."
         },
         "tlsKey": {
           "type": "string",
-          "format": "byte",
           "description": "TLS key."
         },
         "caCert": {
           "type": "string",
-          "format": "byte",
           "description": "CA certificate."
         },
         "expiresAt": {

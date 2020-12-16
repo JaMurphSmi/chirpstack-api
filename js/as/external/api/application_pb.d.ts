@@ -1725,20 +1725,14 @@ export namespace GenerateMQTTIntegrationClientCertificateRequest {
 }
 
 export class GenerateMQTTIntegrationClientCertificateResponse extends jspb.Message {
-  getTlsCert(): Uint8Array | string;
-  getTlsCert_asU8(): Uint8Array;
-  getTlsCert_asB64(): string;
-  setTlsCert(value: Uint8Array | string): void;
+  getTlsCert(): string;
+  setTlsCert(value: string): void;
 
-  getTlsKey(): Uint8Array | string;
-  getTlsKey_asU8(): Uint8Array;
-  getTlsKey_asB64(): string;
-  setTlsKey(value: Uint8Array | string): void;
+  getTlsKey(): string;
+  setTlsKey(value: string): void;
 
-  getCaCert(): Uint8Array | string;
-  getCaCert_asU8(): Uint8Array;
-  getCaCert_asB64(): string;
-  setCaCert(value: Uint8Array | string): void;
+  getCaCert(): string;
+  setCaCert(value: string): void;
 
   hasExpiresAt(): boolean;
   clearExpiresAt(): void;
@@ -1757,9 +1751,9 @@ export class GenerateMQTTIntegrationClientCertificateResponse extends jspb.Messa
 
 export namespace GenerateMQTTIntegrationClientCertificateResponse {
   export type AsObject = {
-    tlsCert: Uint8Array | string,
-    tlsKey: Uint8Array | string,
-    caCert: Uint8Array | string,
+    tlsCert: string,
+    tlsKey: string,
+    caCert: string,
     expiresAt?: google_protobuf_timestamp_pb.Timestamp.AsObject,
   }
 }
