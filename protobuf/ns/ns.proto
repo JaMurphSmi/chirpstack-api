@@ -451,7 +451,7 @@ message Gateway {
     // data for this gateway is forwarded.
     bytes routing_profile_id = 5;
 
-    // Service-profile ID.
+    // Service-profile ID (optional).
     bytes service_profile_id = 6;
 }
 
