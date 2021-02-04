@@ -1,4 +1,4 @@
-module github.com/JaMurphSmi/chirpstack-api/go/v3
+module github.com/brocaar/chirpstack-api/go/v3
 
 go 1.14
 
@@ -11,3 +11,5 @@ require (
 	google.golang.org/grpc v1.28.0
 	gopkg.in/yaml.v2 v2.2.3 // indirect
 )
+
+replace github.com/brocaar/chirpstack-api/go/v3 v3.1.3 => ./JaMurphSmi/chirpstack-api/go/v3
