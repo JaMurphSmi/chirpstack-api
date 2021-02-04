@@ -222,6 +222,39 @@ message UplinkRXInfo {
 
     // CRC status.
     CRCStatus crc_status = 17 [json_name = "crcStatus"];
+	
+	// Battery level.
+	uint32 battery = 18;
+	
+	// Battery status.
+	uint32 battery_status = 19;
+	
+	// Humidity level.
+	uint32 humidity = 20;
+	
+	// Device velocity.
+	uint32 velocity = 21;
+	
+	// Internal temperature.
+	uint32 internal_temperature = 22;
+	
+	// Device status.
+	uint32 status = 23;
+	
+	// Customer name.
+	bytes customer_name = 24;
+	
+	// Firmware version.
+	bytes firmware_version = 25;
+	
+	// Is quiet.
+	bool is_quiet = 26;
+	
+	// Product ID.
+	bytes product_id = 27;
+	
+	// Customer ID.
+	bytes customer_id = 28;
 }
 
 message DownlinkTXInfo {
